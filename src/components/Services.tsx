@@ -19,10 +19,10 @@ const Services = () => {
       ></div>
 
       <h2
-        className="text-end py-8 text-[15rem] text-transparent font-family-zentry"
-        style={{
-          WebkitTextStroke: "1px #AAAAAA",
-        }}
+        className="text-end py-8 text-[15rem] font-extrabold  opacity-75 bg-gradient-to-r from-blue-500 to-sky-900 bg-clip-text text-transparent leading-none"
+        // style={{
+        //   WebkitTextStroke: "1px #AAAAAA",
+        // }}
       >
         Servicios
       </h2>
@@ -65,14 +65,14 @@ const Services = () => {
           {/* Circuitos horizontales */}
           <path
             d="M150 150 H650"
-            stroke="#4B8AFE"
+            stroke="#6F6F6F"
             strokeWidth="1"
             strokeDasharray="5,5"
             fill="none"
           />
           <path
             d="M150 350 H650"
-            stroke="#4B8AFE"
+            stroke="#6F6F6F"
             strokeWidth="1"
             strokeDasharray="5,5"
             fill="none"
@@ -81,14 +81,14 @@ const Services = () => {
           {/* Circuitos verticales */}
           <path
             d="M150 150 V350"
-            stroke="#4B8AFE"
+            stroke="#6F6F6F"
             strokeWidth="1"
             strokeDasharray="5,5"
             fill="none"
           />
           <path
             d="M650 150 V350"
-            stroke="#4B8AFE"
+            stroke="#6F6F6F"
             strokeWidth="1"
             strokeDasharray="5,5"
             fill="none"
@@ -97,7 +97,7 @@ const Services = () => {
           {/* Circuitos diagonales */}
           <path
             d="M150 150 L650 350"
-            stroke="#4B8AFE"
+            stroke="#6F6F6F"
             strokeWidth="1"
             strokeDasharray="3,3"
             fill="none"
@@ -170,11 +170,11 @@ const Services = () => {
           </circle>
 
           {/* Servicios */}
-          <CardService name="Páginas web" icon={AiOutlineGlobal} x={180} y={180} />
-          <CardService name="Apps móviles" icon={MdPhoneIphone} x={500} y={180} />
+          <CardService name="Paginas web" icon={AiOutlineGlobal} x={180} y={180} />
+          <CardService name="Apps moviles" icon={MdPhoneIphone} x={500} y={180} />
           <CardService name="Dashboard" icon={MdDashboard} x={180} y={280} />
           <CardService name="Soporte TI" icon={BsTools} x={500} y={280} />
-          <CardService name="Analisis de datos" icon={PiChartLineUpBold} x={350} y={100} />
+          <CardService name="Analitica" icon={PiChartLineUpBold} x={350} y={100} />
           <CardService name="Chatbots AI" icon={PiChartLineUpBold} x={350} y={300} />
         </svg>
       </div>

@@ -7,7 +7,7 @@ const Hero = () => {
             Bienvenidos a EXPLO<span className="text-[#4B8AFE] ">BYTE</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-lg">
-            Explora soluciones innovadoras diseñadas para impulsar tu negocio. 
+            Explora soluciones innovadoras diseñadas para impulsar tu negocio.
             Nuestro equipo de desarrolladores está listo para ayudarte a alcanzar tus metas.
           </p>
           <div className="flex space-x-4">
@@ -19,7 +19,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        
+
         <div className="relative">
           <div className="absolute inset-0 bg-sky-500/10 rounded-xl -rotate-3"></div>
           <div className="relative bg-gray-900 rounded-xl overflow-hidden aspect-video flex flex-col border border-gray-700 shadow-2xl">
@@ -31,38 +31,74 @@ const Hero = () => {
               </div>
               <div className="text-xs text-gray-400 ml-4">contactar-explobyte.js</div>
             </div>
-            
+
             {/* Código JavaScript */}
             <div className="flex-1 p-4 overflow-auto font-mono text-sm">
+              {/* Función principal para contactar a Explobyte */}
               <div className="text-gray-400">
-                <span className="text-purple-400">function</span> <span className="text-blue-400">contactarExplobyte</span><span className="text-gray-400">(</span><span className="text-orange-300">mensaje</span><span className="text-gray-400">) </span><span className="text-gray-400"> {'{'}</span>
+                <span className="text-purple-400">function</span> <span className="text-blue-400">contactarExplobyte</span><span className="text-gray-400">(</span><span className="text-orange-300">mensaje</span><span className="text-gray-400">, </span><span className="text-orange-300">tipoConsulta</span><span className="text-gray-400"> = </span><span className="text-green-400">"general"</span><span className="text-gray-400">) </span><span className="text-gray-400">{'{'}</span>
               </div>
+
+              {/* Verificación de interés */}
               <div className="text-gray-400 ml-4">
-                <span className="text-purple-400">if</span> <span className="text-gray-400">(</span><span className="text-blue-400">quieresNuestrosServicios</span><span className="text-gray-400">) {'{'}</span>
+                <span className="text-purple-400">if</span> <span className="text-gray-400">(</span><span className="text-blue-400">quieresNuestrosServicios</span><span className="text-gray-400">) </span><span className="text-gray-400">{'{'}</span>
               </div>
+
+              {/* Acciones si hay interés */}
               <div className="text-gray-400 ml-8">
-                <span className="text-blue-400">agendar</span><span className="text-gray-400">.</span><span className="text-blue-400">reunion</span><span className="text-gray-400">();</span>
+                <span className="text-blue-400">console</span><span className="text-gray-400">.</span><span className="text-blue-400">log</span><span className="text-gray-400">(</span><span className="text-green-400">`¡Genial! Estamos emocionados de ayudarte con: ${'${'}</span><span className="text-orange-300">mensaje</span><span className="text-green-400"> {"}`"}</span><span className="text-gray-400">);</span><br />
+                <span className="text-blue-400">agendar</span><span className="text-gray-400">.</span><span className="text-blue-400">reunion</span><span className="text-gray-400">(</span><span className="text-green-400">"virtual"</span><span className="text-gray-400">, </span><span className="text-orange-300">tipoConsulta</span><span className="text-gray-400">);</span><br />
+                <span className="text-blue-400">enviarConsulta</span><span className="text-gray-400">(</span><span className="text-orange-300">mensaje</span><span className="text-gray-400">, </span><span className="text-orange-300">tipoConsulta</span><span className="text-gray-400">);</span><br />
+                <span className="text-blue-400">mostrarConfeti</span><span className="text-gray-400">(); </span><span className="text-gray-400">// ¡Porque nos encanta ayudar!</span>
               </div>
+
+              {/* Caso contrario */}
               <div className="text-gray-400 ml-4">
                 <span className="text-gray-400">{'}'} </span><span className="text-purple-400">else</span> <span className="text-gray-400">{'{'}</span>
               </div>
+
               <div className="text-gray-400 ml-8">
-                <span className="text-blue-400">enviarConsulta</span><span className="text-gray-400">(</span><span className="text-orange-300">mensaje</span><span className="text-gray-400">);</span>
+                <span className="text-blue-400">console</span><span className="text-gray-400">.</span><span className="text-blue-400">log</span><span className="text-gray-400">(</span><span className="text-green-400">"¡No hay problema! Estamos aquí cuando nos necesites 😊"</span><span className="text-gray-400">);</span><br />
+                <span className="text-blue-400">enviar</span><span className="text-gray-400">.</span><span className="text-blue-400">brochureDigital</span><span className="text-gray-400">(); </span><span className="text-gray-400">// Por si cambias de opinión</span>
               </div>
+
               <div className="text-gray-400 ml-4">
                 <span className="text-gray-400">{'}'}</span>
               </div>
+
               <div className="text-gray-400">
                 <span className="text-gray-400">{'}'}</span>
               </div>
+
+              {/* Ejemplos de uso */}
               <div className="text-gray-400 mt-4">
-                <span className="text-gray-400">// Ejemplo de uso:</span>
+                <span className="text-gray-400">// Ejemplo 1: Consulta específica</span>
               </div>
               <div className="text-gray-400">
-                <span className="text-blue-400">contactarExplobyte</span><span className="text-gray-400">(</span><span className="text-green-400">"Hola, necesito ayuda para digitalizar mi negocio"</span><span className="text-gray-400">);</span>
+                <span className="text-blue-400">contactarExplobyte</span><span className="text-gray-400">(</span><span className="text-green-400">"Necesito una app para mi restaurante"</span><span className="text-gray-400">, </span><span className="text-green-400">"desarrollo"</span><span className="text-gray-400">);</span>
               </div>
+
               <div className="text-gray-400 mt-2">
-                <span className="text-gray-400">// Resultado: Agenda una reunión o envía tu consulta</span>
+                <span className="text-gray-400">// Ejemplo 2: Consulta general</span>
+              </div>
+              <div className="text-gray-400">
+                <span className="text-blue-400">contactarExplobyte</span><span className="text-gray-400">(</span><span className="text-green-400">"¿Cómo puedo mejorar mi presencia digital?"</span><span className="text-gray-400">);</span>
+              </div>
+
+              <div className="text-gray-400 mt-2">
+                <span className="text-gray-400">/*</span>
+              </div>
+              <div className="text-gray-400">
+                <span className="text-gray-400"> * ES SOLO UNA BROMA! :{")"}</span>
+              </div>
+              <div className="text-gray-400">
+                <span className="text-gray-400"> * NO NECESITAS ENTENDER EL CODIGO PARA CONTACTARNOS JAJA</span>
+              </div>
+              <div className="text-gray-400">
+                <span className="text-gray-400"> * SOLO SIGUE SCROLLEANDO LA PÁGINA!</span>
+              </div>
+              <div className="text-gray-400">
+                <span className="text-gray-400"> */</span>
               </div>
             </div>
           </div>

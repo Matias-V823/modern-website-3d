@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,11 +73,19 @@ const About = () => {
                         <div className="border-[0.1px] border-gray-600 p-6 rounded-lg">
                             <h3 className="text-4xl font-bold mb-4 border-b-[0.1px] border-gray-600 pb-3">Nuestra Historia 🚀</h3>
                             <p className="text-lg mb-6 border-[0.1px] border-gray-400 p-4 rounded">
-                                La verdad... ¿historia? 😅 Somos simplemente unos nerds del código que descubrieron que podían ganar dinero haciendo lo que más aman: crear software moderno y comer pizza fría a las 3 AM.🍕💻
+                                La verdad... ¿historia? 😅 Somos simplemente unos nerds del código que descubrieron que podían ganar dinero programando y ayudando a los emprendedores a modernizar sus negocios.💻
                             </p>
-                            <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition border-[0.1px] border-gray-600 cursor-crosshair">
-                                Conoce más
-                            </button>
+                            <div className="flex gap-2">
+                                <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer" className="p-3 bg-black text-white rounded-lg hover:bg-gray-800 transition border-[0.1px] border-gray-600 cursor-crosshair">
+                                    <FaInstagram className="h-6 w-6" />
+                                </a>
+                                <a href="https://wa.me/tunumero" target="_blank" rel="noopener noreferrer" className="p-3 bg-black text-white rounded-lg hover:bg-gray-800 transition border-[0.1px] border-gray-600 cursor-crosshair">
+                                    <FaWhatsapp className="h-6 w-6" />
+                                </a>
+                                <a href="https://tiktok.com/@tu_usuario" target="_blank" rel="noopener noreferrer" className="p-3 bg-black text-white rounded-lg hover:bg-gray-800 transition border-[0.1px] border-gray-600 cursor-crosshair">
+                                    <FaTiktok className="h-6 w-6" />
+                                </a>
+                            </div>
                         </div>
                         <div className="border-[0.1px] border-gray-600 p-4 rounded-lg">
                             <img

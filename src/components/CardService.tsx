@@ -12,9 +12,9 @@ const CardService = ({ name, icon: Icon, x, y }: CardServiceType) => {
     <g className="hover:scale-105 transition-transform cursor-pointer">
       <foreignObject x={x} y={y} width="120" height="80">
         <div
-          className="w-full h-full rounded-2xl backdrop-blur-xs border border-gray-800/20
-                     flex flex-col items-center justify-center font-family-zentry text-white text-sm
-                     gap-1 shadow-xl transition-all hover:scale-105 hover:shadow-2xl"
+          className="w-full h-full rounded-2xl backdrop-blur-xs border-[0.7px]  border-blue-principal/40
+                     flex flex-col items-center justify-center font-family-general text-white text-xs
+                     gap-1 shadow-xl transition-all hover:scale-90 hover:shadow-2xl cursor-crosshair"
         >
           <Icon className="text-xl" />
           <span>{name}</span>
