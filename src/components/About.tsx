@@ -21,7 +21,6 @@ const About = () => {
                 scrub: 1,
                 pin: true,
                 anticipatePin: 1,
-                markers: true
             }
         });
 
@@ -75,7 +74,7 @@ const About = () => {
                             <p className="text-lg mb-6 border-[0.1px] border-gray-400 p-4 rounded">
                                 La verdad... ¿historia? 😅 Somos simplemente unos nerds del código que descubrieron que podían ganar dinero haciendo lo que más aman: crear software moderno y comer pizza fría a las 3 AM.🍕💻
                             </p>
-                            <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition border-[0.1px] border-gray-600">
+                            <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition border-[0.1px] border-gray-600 cursor-crosshair">
                                 Conoce más
                             </button>
                         </div>
