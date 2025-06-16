@@ -14,15 +14,12 @@ const Services = () => {
       />
 
       <div
-        className="h-0 w-[60rem] absolute top-[35%] left-[-5%] shadow-[0_0_900px_20px_#4B8AFE] -rotate-[180deg] -z-10"
+        className="h-0 w-[60rem] absolute top-[25%] left-[-5%] shadow-[0_0_900px_20px_#4B8AFE] -rotate-[180deg] -z-10"
         aria-hidden="true"
       ></div>
 
       <h2
-        className="text-end py-8 text-[15rem] font-extrabold  opacity-75 bg-gradient-to-r from-blue-500 to-sky-900 bg-clip-text text-transparent leading-none"
-        // style={{
-        //   WebkitTextStroke: "1px #AAAAAA",
-        // }}
+        className="text-end  text-[15rem] font-extrabold  opacity-75 bg-gradient-to-r from-blue-500 to-sky-900 bg-clip-text text-transparent leading-none"
       >
         Servicios
       </h2>
@@ -170,11 +167,11 @@ const Services = () => {
           </circle>
 
           {/* Servicios */}
-          <CardService name="Paginas web" icon={AiOutlineGlobal} x={180} y={180} />
-          <CardService name="Apps moviles" icon={MdPhoneIphone} x={500} y={180} />
+          <CardService name="Páginas web" icon={AiOutlineGlobal} x={180} y={180} />
+          <CardService name="Apps móviles" icon={MdPhoneIphone} x={500} y={180} />
           <CardService name="Dashboard" icon={MdDashboard} x={180} y={280} />
           <CardService name="Soporte TI" icon={BsTools} x={500} y={280} />
-          <CardService name="Analitica" icon={PiChartLineUpBold} x={350} y={100} />
+          <CardService name="Analítica" icon={PiChartLineUpBold} x={350} y={100} />
           <CardService name="Chatbots AI" icon={PiChartLineUpBold} x={350} y={300} />
         </svg>
       </div>
