@@ -89,15 +89,15 @@ const Contact = () => {
                                 </div>
                             </form>
 
-                            <div className="flex flex-col justify-center bg-blue-principal w-1/2 rounded-lg ">
-                                <button
-                                    type="submit"
-                                    form="contactForm"
-                                    className="text-zinc-300 px-4 py-2 rounded hover:text-white transition cursor-crosshair"
-                                >
-                                    <h3 className="font-bold font-family-zentry text-5xl">ENVIAR</h3>
-                                </button>
-                            </div>
+
+                            <button
+                                type="submit"
+                                form="contactForm"
+                                className="text-zinc-300 px-4 py-2  hover:text-white transition cursor-crosshair flex flex-col justify-center bg-blue-principal w-1/2 rounded-lg"
+                            >
+                                <h3 className="font-bold font-family-zentry text-5xl">ENVIAR</h3>
+                            </button>
+
                             {error && <p className="error">Error: {error}</p>}
                         </>
                     )
